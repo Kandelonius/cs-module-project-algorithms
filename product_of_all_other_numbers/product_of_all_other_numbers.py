@@ -3,9 +3,20 @@ Input: a List of integers
 Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
-    # Your code here
+    # create an array to hold the multiplied numbers
+    multiplied = []
+    total = 1
+    iterations = 0
+    # move through the original array and multiply all of the numbers together
+    for item in arr:
+        print(f"item is {item} and total is {total} arr[iterations] is {arr[iterations]}")
+        total *= arr[iterations]
+        iterations += 1
+    # fill the new array with numbers dividing by the element in that position of the first array
+    for item in arr:
+        multiplied.append(total / item)
+    return multiplied
 
-    pass
 
 
 if __name__ == '__main__':
