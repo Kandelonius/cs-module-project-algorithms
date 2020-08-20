@@ -14,6 +14,7 @@ def single_number(arr):
     for key in dict:
         if dict[key] == 1:
             return key
+    # return dict[1]
 
 
     # it already exists in the dictionary and if it doesn't add it to the dictionary
