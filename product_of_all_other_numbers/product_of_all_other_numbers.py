@@ -4,6 +4,7 @@ Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
     # create an array to hold the multiplied numbers
+
     multiplied = []
     total = 1
     iterations = 0
@@ -17,6 +18,9 @@ def product_of_all_other_numbers(arr):
         multiplied.append(total / item)
     return multiplied
 
+    # multiplied = arr
+    # iterations = 0
+    # for item in arr:
 
 
 if __name__ == '__main__':

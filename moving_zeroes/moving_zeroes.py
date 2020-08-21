@@ -7,7 +7,8 @@ def moving_zeroes(arr):
     # and the zeroes at the back
     moving = [0] * len(arr)
     num = 0
-    for elem in arr:
+    # moving[num] = [elem for elem in arr if elem != 0]
+    for elem in arr: # .o4s
         if elem != 0:
             moving[num] = elem
             num += 1
